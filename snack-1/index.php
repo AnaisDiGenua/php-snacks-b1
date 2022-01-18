@@ -59,10 +59,25 @@ $partite = [
             for($i = 0; $i < count($partite); $i++) {
                 echo 
                     "<li>
-                        {$partite[$i]["squadraCasa"]} - {$partite[$i]["squadraOspite"]} | {$partite[$i]["puntiCasa"]} - {$partite[$i]["puntiOspite"]}
+                        {$partite[$i]["squadraCasa"]} - 
+                        {$partite[$i]["squadraOspite"]} | 
+                        {$partite[$i]["puntiCasa"]} - 
+                        {$partite[$i]["puntiOspite"]}
                     </li>";
             };
         ?>
+    </ul>
+
+    <!-- sintassi alternativa -->
+    <ul>
+        <?php for($i = 0; $i < count($partite); $i++) { ?>
+            <li>
+                <?php echo $partite[$i]["squadraCasa"];?> - 
+                <?php echo $partite[$i]["squadraOspite"];?> | 
+                <?php echo $partite[$i]["puntiCasa"];?> -
+                <?php echo $partite[$i]["puntiOspite"];?>
+            </li>
+        <?php } ?>
     </ul>
 </body>
 </html>
