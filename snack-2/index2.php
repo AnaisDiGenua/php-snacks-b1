@@ -31,5 +31,22 @@ $age = $_GET["eta"];
         };
     ?>
 
+
+    <?php
+    //altra versione
+    
+        // if (strlen($_GET["name"]) < 4) {
+        //     echo "Accesso negato: il nome è minore di 4 caratteri";
+        // } elseif (!strpos($_GET["mail"], ".")) {
+        //     echo "Accesso negato: manca il punto nella mail";
+        // } elseif (!strpos($_GET["mail"], "@")) {
+        //     echo "Accesso negato: manca la @ nella mail";
+        // } elseif (!is_numeric($_GET["eta"])) {
+        //     echo "Accesso negato: l'età non è un numero";
+        // } else {
+        //     echo "Accesso riuscito";
+        // }
+    ?>
+
 </body>
 </html>
